@@ -8,7 +8,7 @@ const options = {
   poolSize: 10
 };
 
-mongoose.connect(dbURI, {useNewUrlParser: true }).then(
+mongoose.connect(dbURI, {useUnifiedTopology: true, useNewUrlParser: true }).then(
   () => {
     console.log("Database connection established!");
   },
