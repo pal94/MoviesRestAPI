@@ -6,8 +6,8 @@ require("./config/db");
 
 const app =express();
 
-mongoose.connect('mongodb://localhost/moviedb');
-mongoose.Promise=global.Promise;
+// mongoose.connect('mongodb://localhost/moviedb');
+// mongoose.Promise=global.Promise;
 
 app.set("view engine", "ejs");
 app.use(express.static('./public'));
