@@ -1,0 +1,14 @@
+<html>
+        <% include ./partials/header %>
+        <div>
+            <div>
+                <h2>New Car</h2>
+                <form action="/movies", method="POST">
+                    <input type="text", name="movie[name]" placeholder="name">
+                    <input type="text", name="movie[rating]" placeholder="rating">
+                    <input type="text", name="movie[available]" placeholder="availablity">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+</html>

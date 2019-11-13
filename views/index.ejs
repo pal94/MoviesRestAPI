@@ -1,0 +1,12 @@
+<html>
+        <% include ./partials/header %>
+    <body>
+        <% movies.forEach(function(movie){ %>
+            <div>
+                <h2><%=movie.name %></h2>
+                <p><%= movie.rating %></p>
+                <p><%=movie.available %></p>
+            </div>
+        <% }) %>
+    </body>
+</html>
