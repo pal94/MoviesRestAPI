@@ -2,6 +2,8 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 
+require("./config/db");
+
 const app =express();
 
 mongoose.connect('mongodb://localhost/moviedb');
